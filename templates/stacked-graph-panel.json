@@ -1,0 +1,111 @@
+{
+  "aliasColors": {},
+  "bars": true,
+  "dashLength": 10,
+  "dashes": false,
+  "datasource": "$datasource",
+  "decimals": 2,
+  "description": "",
+  "fieldConfig": {
+    "defaults": {
+      "custom": {}
+    },
+    "overrides": []
+  },
+  "fill": 1,
+  "fillGradient": 0,
+  "gridPos": {
+    "h": 8,
+    "w": 12,
+    "x": 0,
+    "y": 0
+  },
+  "hiddenSeries": false,
+  "id": 2,
+  "legend": {
+    "alignAsTable": false,
+    "avg": false,
+    "current": false,
+    "max": false,
+    "min": false,
+    "rightSide": false,
+    "show": true,
+    "total": false,
+    "values": false,
+    "sideWidth": 220
+  },
+  "lines": false,
+  "linewidth": 1,
+  "nullPointMode": "connected",
+  "options": {
+    "alertThreshold": false
+  },
+  "percentage": true,
+  "pluginVersion": "7.4.0-pre",
+  "pointradius": 2,
+  "points": false,
+  "renderer": "flot",
+  "seriesOverrides": [],
+  "spaceLength": 10,
+  "stack": true,
+  "steppedLine": false,
+  "targets": [
+    {
+      "metricQuery": {
+        "aliasBy": "{{metric.label.instance_name}}",
+        "alignmentPeriod": "$alignmentPeriod",
+        "crossSeriesReducer": "REDUCE_NONE",
+        "filters": [],
+        "groupBys": [],
+        "metricKind": "GAUGE",
+        "metricType": "compute.googleapis.com/instance/cpu/utilization",
+        "perSeriesAligner": "ALIGN_MEAN",
+        "projectName": "$project",
+        "unit": "10^2.%",
+        "valueType": "DOUBLE"
+      },
+      "queryType": "metrics",
+      "refId": "A"
+    }
+  ],
+  "thresholds": [],
+  "timeFrom": null,
+  "timeRegions": [],
+  "timeShift": null,
+  "title": "GCE VM Instance - CPU Utilization",
+  "tooltip": {
+    "shared": true,
+    "sort": 0,
+    "value_type": "individual"
+  },
+  "type": "graph",
+  "xaxis": {
+    "buckets": null,
+    "mode": "time",
+    "name": null,
+    "show": true,
+    "values": []
+  },
+  "yaxes": [
+    {
+      "format": "percent",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": true
+    },
+    {
+      "format": "short",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": true
+    }
+  ],
+  "yaxis": {
+    "align": false,
+    "alignLevel": null
+  }
+}

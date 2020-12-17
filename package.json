@@ -1,0 +1,26 @@
+{
+  "name": "grafana-dashboard-converter",
+  "version": "0.0.1",
+  "description": "Converts a GCP Cloud Monitoring dashboard to a Grafana dashboard",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunker/grafana-dashboard-converter.git"
+  },
+  "author": "Erik Sundell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunker/grafana-dashboard-converter/issues"
+  },
+  "homepage": "https://github.com/sunker/grafana-dashboard-converter#readme",
+  "dependencies": {
+    "@types/node": "^14.14.13",
+    "lodash.toupper": "^4.1.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}
