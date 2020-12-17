@@ -4,7 +4,7 @@ Converts a [Cloud Monitoring dashboard](https://github.com/GoogleCloudPlatform/m
 
 ## How to use
 
-The program will scan the input folder in the root of the app for Cloud Monitoring dashboards. It will scan the input folder recusively to look for dashboards, and the idea of that is that you should be able to drop the file structure from the (cloud monitoring dashboards sample github page)[https://github.com/GoogleCloudPlatform/monitoring-dashboard-samples/tree/master/dashboards] directly into the input folder. The program will then process each dashboard and put the resulting Grafana dashboard in the output folder. Whenever a readme.md file is found in input/\*\* the program will try to scrape the dashboard description from the readme file and tie it to a dashboard. In case it could find a match, that description will be put in a text panel at the top of the dashboard.
+The program will scan the input folder in the root of the app for Cloud Monitoring dashboards. It will scan the input folder recusively to look for dashboards, and the idea of that is that you should be able to drop the file structure from the [cloud monitoring dashboards sample github page](https://github.com/GoogleCloudPlatform/monitoring-dashboard-samples/tree/master/dashboards) directly into the input folder. The program will then process each dashboard and put the resulting Grafana dashboard in the output folder. Whenever a readme.md file is found in input/\*\* the program will try to scrape the dashboard description from the readme file and tie it to a dashboard. In case it could find a match, that description will be put in a text panel at the top of the dashboard.
 
 ## Limitations
 
